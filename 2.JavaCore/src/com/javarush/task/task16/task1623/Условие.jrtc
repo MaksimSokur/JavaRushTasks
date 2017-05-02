@@ -1,0 +1,16 @@
+<div class="wdghtml" taskKey="com.javarush.task.task16.task1623">
+<h3>Рекурсивное создание нитей</h3>
+<p>1. Измени класс <span class="text-corporate"><strong>GenerateThread</strong></span> так, чтобы он стал нитью.<br />
+2. Создай конструктор <mark><strong>GenerateThread</strong></mark>, который должен:<br />
+2.1. Вызвать конструктор суперкласса с параметром <span class="text-corporate">String</span> &#8212; номером созданной нити. Используй <mark>countCreatedThreads</mark>.<br />
+2.2. Запустить текущую нить.<br />
+2.3. Номер первой нити должен начинается с <span class="text-user"><strong>1</strong></span>.<br />
+3. Переопредели метод <mark>toString</mark>, для этого внутри <mark>GenerateThread</mark> нажми <span class="text-neon">Alt+Insert -&gt; Override Methods</span>. Начни печатать <mark>toString</mark>.<br />
+3.1. Метод toString должен возвращать <strong>№</strong> текущей нити и слово &#171;<em><strong> created</strong></em>&#171;. Используй <mark>getName()</mark>.</p>
+<p><strong>Пример:</strong> &#171;<em><strong>8 created</strong></em>&#187;</p>
+<p>4. Пока количество созданных нитей меньше <mark class="green">Solution</mark>.<mark class="user">count</mark> метод <mark>run</mark> должен:<br />
+4.1. Создавать новую нить типа <span class="text-corporate">GenerateThread</span>.<br />
+4.2. Выводить в консоль созданную в пункте <strong>4.1.</strong> <strong>нить</strong>.<br />
+5. В итоге должно быть выведено в консоль <span class="text-user"><strong>15</strong></span> строк.</p>
+
+</div>
